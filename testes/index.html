@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Test ID</title>
+    <style>
+        #background-rosa {
+            background: pink;
+        }
+
+        .background-red {
+            background: red;
+        }
+        /*Não consegue sobrescrever o fundo rosa pois ID > Class, id possui
+        ESPECIFIDADE maior que a CLASSE*/
+
+        .yato-oi{
+            margin-inline: auto;
+            margin-block: auto;
+            width: 38%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="background-rosa" class="background-red">Olá Mundo!</h1>
+
+    <div class="yato-oi">
+        <img src="https://uploads.spiritfanfiction.com/historias/capitulos/201901/o-deus-da-calamidade-sorte-e-protecao-15585659-270120191617.gif">
+    </div>
+    </div>
+
+</body>
+
+</html>
