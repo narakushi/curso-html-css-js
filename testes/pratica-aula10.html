@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .container-one{
+            background: #fcdad5;
+            width: 300px;
+            height: 200px;
+            padding: 10px 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-top-color: #ff0099;
+            border-right-color: #ff0055;
+            border-bottom-color: #791b47;
+            border-left-color: #5eff00;
+            margin: 30px;
+        }
+
+        .container-two{
+            background-image: url(https://avatarfiles.alphacoders.com/247/thumb-247062.png);
+            background-position: center;
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 20px solid #5eff00;
+            margin: 30px 80px;
+            color: #16098f;
+            text-align: center;
+            font-size: 14px;
+            align-items: center;
+            display: flex;
+        }
+
+    </style>
+
 </head>
 <body>
-    
+    <div class="container-one">
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptates facere voluptatem laboriosam nihil. Alias recusandae eius sint quo beatae, dignissimos laboriosam dolorum adipisci dolorem, eum nisi officiis perspiciatis sapiente!</strong>
+    </div>
+
+    <div class="container-two">
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iusto alias adipisci id voluptatem velit corrupti ratione</strong>
+    </div>
+
 </body>
 </html>
