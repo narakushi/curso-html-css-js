@@ -14,7 +14,7 @@
 
         table{
             border-collapse: collapse;
-            width: 100%;
+            width: 800px;
         }
 
         table td, table th {
@@ -38,49 +38,55 @@
             font-size: 14px;
             margin-bottom: 5px 0px;
         }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
         
     </style>
 
 </head>
-
 <body>
     <p>Lorem ipsum dolor sit</p>
-    <table>
-        <caption>Uma descrição para a tabela</caption>
-       <thead>
-        <tr>
-            <th>Titulo 1</th>
-            <th>Titulo 2</th>
-            <th>Titulo 3</th>
-        </tr>
-       </thead>
-       
-       <tbody>
-        <tr>
-            <td>Corpo 1</td>
-            <td>Corpo 2</td>
-            <td>Corpo 3</td>
-        </tr>
-        <tr>
-            <td colspan="2">Corpo 4</td>
-            <td>Corpo 6</td>
-        </tr>
-        <tr>
-            <td>Corpo 7</td>
-            <td>Corpo 8</td>
-            <td>Corpo 9</td>
-        </tr>
-       </tbody>
 
-       <tfoot>
-        <tr>
-            <td colspan="2" rowspan="2"></td>
-            <td>Footer</td>
-        </tr>
-        <tr>
-            <td>Footer</td>
-        </tr>
-       </tfoot>
-    </table>
+    <div class="responsive-table">
+        <table>
+            <caption>Uma descrição para a tabela</caption>
+           <thead>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+           </thead>
+        
+           <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore commodi quasi reiciendis perspiciatis saepe voluptates aliquam facere voluptas ex maiores magni temporibus magnam culpa reprehenderit quam sint quisquam, excepturi sed?</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Corpo 4</td>
+                <td>Corpo 6</td>
+            </tr>
+            <tr>
+                <td>Corpo 7</td>
+                <td>Corpo 8</td>
+                <td>Corpo 9</td>
+            </tr>
+           </tbody>
+           <tfoot>
+            <tr>
+                <td colspan="2" rowspan="3"></td>
+                <td>TOTAL:</td>
+            </tr>
+            <tr>
+                <td>r$456</td>
+            </tr>
+           </tfoot>
+        </table>
+    </div>
 </body>
 </html>
