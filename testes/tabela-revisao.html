@@ -15,6 +15,7 @@
         .tabela caption {
             text-align: right;
             margin-bottom: 10px;
+            font-style: italic;
         }
 
         .tabela td,
@@ -22,6 +23,10 @@
             border: 2px solid black;
             padding: 5px 8px;
             text-align: left;
+        }
+
+        thead th, tfoot td{
+            background: #ddd;
         }
 
     </style>
@@ -68,7 +73,6 @@
                 <td>JBC</td>
                 <td>R$ 33,90</td>
             </tr>
-
             <tr>
                 <td>1x</td>
                 <td>Given</td>
@@ -76,16 +80,18 @@
                 <td>Natsuki</td>
                 <td>NewPop</td>
                 <td>R$ 29,90</td>
-            </tr>
-            <tr>
-                <td colspan="5">kk</td>
-                <td>Total:</td>
-            </tr>
+            </tr>     
         </tbody>
 
         <tfoot>
             <tr>
-                <td rowspan="2"></td>
+                <td colspan="5" rowspan="2"></td>
+                <td style="background: #8a898a">Total:</td>
+            </tr>
+
+            <tr>
+               <td colspan="5">
+                R$ 123,60</td>
             </tr>
         </tfoot>
     </table>
