@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        .tabela {
+            border-collapse: collapse;
+        }
+
+        .tabela caption {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .tabela td,
+        .tabela th {
+            border: 2px solid black;
+            padding: 5px 8px;
+            text-align: left;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <table class="tabela">
+        <caption>Livros comprados em 2023</caption>
+        <thead>
+            <tr>
+                <th>Quantidade</th>
+                <th>Titulo</th>
+                <th>Ano</th>
+                <th>Autor</th>
+                <th>Editora</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1x</td>
+                <td>Boku no hero</td>
+                <td>2014</td>
+                <td>Kohei</td>
+                <td>JBC</td>
+                <td>R$ 29,90</td>
+            </tr>
+            <tr>
+                <td>1x</td>
+                <td>Shingeki no Kyojin</td>
+                <td>2009</td>
+                <td>Hajime</td>
+                <td>Panini</td>
+                <td>R$ 29,90</td>
+            </tr>
+
+            <tr>
+                <td>1x</td>
+                <td>Nana</td>
+                <td>2000</td>
+                <td>Yazawa</td>
+                <td>JBC</td>
+                <td>R$ 33,90</td>
+            </tr>
+
+            <tr>
+                <td>1x</td>
+                <td>Given</td>
+                <td>2020</td>
+                <td>Natsuki</td>
+                <td>NewPop</td>
+                <td>R$ 29,90</td>
+            </tr>
+            <tr>
+                <td colspan="5">kk</td>
+                <td>Total:</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td rowspan="2"></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
