@@ -24,11 +24,29 @@
         <p>O meu forulário</p>
         <p>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
         </p>
         <p>
             <label for="dev">Sou um dev</label>
-            <input type="checkbox" id="dev" value="sim" checked>
+            <input type="checkbox" id="dev" name="dev" value="sim" checked><br>
+
+            <label for="dev2">Sou um dev2</label>
+            <input type="checkbox" id="dev2" value="sim" checked name="dev2"><br>
+            
+            <label for="dev3">Sou um dev3</label>
+            <input type="checkbox" id="dev3" name="dev3" checked><br>
+        </p>
+
+        <p>
+            Gênero: <br>
+            <label for="feminino">Femenino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" value="masculino" name="genero"><br>
+            
+            <label for="naobinario">Não-Binário</label>
+            <input type="radio" id="naobinario" name="genero" checked><br>
         </p>
         <p>
             <button type="reset">Reset</button>
