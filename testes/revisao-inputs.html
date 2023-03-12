@@ -5,11 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão</title>
+
+    <style>
+        label {
+            cursor: pointer;
+
+        }
+
+        input{
+            outline: none;
+        }
+    </style>
+
 </head>
 <body>
     <section>
         <form action="#">
+            <p>
+                <label for="click">Click em Mim</label>
+                <input type="button" onclick="alert('Hello World')" value="ClickMe" id="click">
+            </p>
 
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </p>
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </p>
+
+            <p>
+                <h1>Genero</h1>
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label><br>
+
+                <input type="radio" name="genero" id="masculino">
+                <label for="masculino">Masculino</label><br>
+
+                <input type="radio" name="genero" id="nb">
+                <label for="nb">Não-binário</label>
+            </p>
+
+            <p>
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data">
+            </p>
+
+            <p>
+                <label for="datetime">Data local: </label>
+                <input type="datetime-local" name="datetime" id="datetime">
+            </p>
         </form>
     </section>
     
