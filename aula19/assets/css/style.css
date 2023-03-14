@@ -11,3 +11,11 @@ body.error div.main-content h2.heading{
     color: red;
     font-style: italic;
 }
+
+div {
+    color: initial;
+}
+
+.pai{
+    color: red
+}
