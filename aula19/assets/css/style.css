@@ -14,8 +14,9 @@ body.error div.main-content h2.heading{
 
 div {
     color: initial;
+    margin-left: 20px;
 }
 
-.pai .filha {
+.pai > .filha > .filha{
     color: red
 }
