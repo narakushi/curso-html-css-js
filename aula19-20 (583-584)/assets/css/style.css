@@ -6,3 +6,7 @@
 .pai .um+.dois {
     color: red;
 }
+
+[meu-atributo="valor"] {
+    color: blue;
+}
