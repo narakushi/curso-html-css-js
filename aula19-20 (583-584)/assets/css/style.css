@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-.pai h1+p {
+.pai .um~.dois {
     color: red;
-}
-
-.pai p+h1 {
-    color: yellow
 }
