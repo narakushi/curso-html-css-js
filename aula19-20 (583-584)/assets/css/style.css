@@ -10,3 +10,8 @@
 [meu-atributo="valor"] {
     color: blue;
 }
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
