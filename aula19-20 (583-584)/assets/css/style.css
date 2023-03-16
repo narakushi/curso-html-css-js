@@ -3,6 +3,6 @@
     padding: 0;
 }
 
-.pai .um~.dois {
+.pai .um+.dois {
     color: red;
 }
