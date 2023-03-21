@@ -7,7 +7,7 @@
     color: red;
 }
 
-[meu-atributo~="valor1"] {
+[meu-atributo^="valor"] {
     color: plum;
 }
 
