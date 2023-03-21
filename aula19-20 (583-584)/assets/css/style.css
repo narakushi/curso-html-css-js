@@ -7,8 +7,8 @@
     color: red;
 }
 
-[meu-atributo="valor"] {
-    color: blue;
+[meu-atributo~="valor1"] {
+    color: plum;
 }
 
 [checked] {
