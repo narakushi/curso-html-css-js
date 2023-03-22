@@ -58,3 +58,7 @@ input:checked+.p{
     background: blue;
 }
 
+input:required{
+    background: red;
+}
+
