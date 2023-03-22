@@ -1,0 +1,28 @@
+
+
+.heading:hover{
+    background: red;
+}
+
+.heading{
+    transition: all 300ms ease-in-out;
+}
+
+a {
+    color: darkorange;
+}
+
+a:visited{
+    color: firebrick;
+}
+
+a:link{
+    color: deeppink
+}
+
+a:hover{
+    background: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
