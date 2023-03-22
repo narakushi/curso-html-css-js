@@ -50,3 +50,11 @@ input:checked+.p{
     color: blueviolet;
 }
 
+.pai .lista li:first-child{
+    background-color: red;
+}
+
+.pai .lista li:last-child{
+    background: blue;
+}
+
