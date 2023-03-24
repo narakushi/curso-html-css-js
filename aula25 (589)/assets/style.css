@@ -1,0 +1,10 @@
+ul li::after{
+    content:' - ';
+    background: red;
+    color: white;
+}
+
+ul li::before{
+    content: '-';
+    display: block;
+}
