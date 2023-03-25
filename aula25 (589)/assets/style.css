@@ -1,4 +1,4 @@
-ul li::after{
+/*ul li::after{
     content:' - ';
     background: red;
     color: white;
@@ -7,4 +7,34 @@ ul li::after{
 ul li::before{
     content: '-';
     display: block;
+}*/
+
+/*p {
+    font-size: 24px;
 }
+
+p::first-letter {
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line {
+    background: red;
+}
+
+p::selection{ para estilizar a seleção
+    background: black;
+    color: white;
+}*/
+
+.form-field::placeholder {
+    color: red;
+}
+
+/*pode ser também
+
+::placeholder {
+    color: red;
+}*/
