@@ -16,7 +16,7 @@ Especificidade - Prioridade
 
 /*Recomendado usar classes*/
 
-#p {
+/*#p {
     background: red;
 }
 
@@ -29,5 +29,9 @@ body#b.bclass p#p.p{
 }
 body#b.bclass p#p.p{
     background: pink !important;
-}
+}*/
+
+.main-container .header .heading {
+
+} /*indicado usar classes, porque é bem fácil sobrescrever e empatar*/
 
