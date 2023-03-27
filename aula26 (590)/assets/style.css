@@ -4,8 +4,8 @@ Especificidade - Prioridade
 1 Classes ESPECIFICIDADE = 1,0 (igual a 10)
 2 Atributos 
 3 Pseudo-classes
-4 Elementos
-5 Pseudo-elementos
+4 Elementos 0,0,1 (igual a 1)
+5 Pseudo-elementos 0,0,1 (igual a 1)
 */
 
 #p {
@@ -16,6 +16,10 @@ Especificidade - Prioridade
     background: yellow;
 }
 
-p#p.p{
-    background: red;
+body#b.bclass p#p.p::selection:hover{
+    background: purple;
+}
+
+body div ul li a{ 5 de especificidade
+
 }
