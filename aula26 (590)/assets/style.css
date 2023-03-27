@@ -1,0 +1,21 @@
+/*
+Especificidade - Prioridade 
+0 ID ESPECIFICIDADE = 1,0,0 (igual a 100)
+1 Classes ESPECIFICIDADE = 1,0 (igual a 10)
+2 Atributos 
+3 Pseudo-classes
+4 Elementos
+5 Pseudo-elementos
+*/
+
+#p {
+    background: red;
+}
+
+#p.p {
+    background: yellow;
+}
+
+p#p.p{
+    background: red;
+}
