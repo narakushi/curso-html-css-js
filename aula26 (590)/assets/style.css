@@ -8,18 +8,26 @@ Especificidade - Prioridade
 5 Pseudo-elementos 0,0,1 (igual a 1)
 */
 
+/*Regras de aplicação das regras CSS
+1º Especificidade
+2º Style
+3º Empate (aplica o ultimo adicionado)
+4º !important*/
+
+/*Recomendado usar classes*/
+
 #p {
     background: red;
 }
 
 #p.p {
-    background: yellow;
+    background: yellow !important; 
 }
 
-body#b.bclass p#p.p::selection:hover{
-    background: purple;
+body#b.bclass p#p.p{
+    background: purple !important;
+}
+body#b.bclass p#p.p{
+    background: pink !important;
 }
 
-body div ul li a{ 5 de especificidade
-
-}
