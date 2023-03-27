@@ -3,3 +3,8 @@
     font-family: sans-serif;
     font-size: 70px;
 }
+
+p {
+    font-size: inherit;
+    color: initial;
+}
