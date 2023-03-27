@@ -1,6 +1,6 @@
 .texto {
-    display: inline;
     background: red;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
 }
