@@ -1,5 +1,6 @@
 .texto {
-    display: block;
+    display: inline;
     background: red;
-    width: 50%;
+    width: 100px;
+    height: 100px;
 }
