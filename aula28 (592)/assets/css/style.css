@@ -14,5 +14,8 @@
     margin: 0 auto 50px auto;
     padding: 10px 5px 15px 1px;
     /*padding: 10px(y) 5px(x)*/
-    border: 5px double black;
+    /*border: 5px double black;*/
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
 }
