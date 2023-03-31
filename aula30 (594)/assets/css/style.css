@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    padding: 15px;;
+}
+
+.grid::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.grid .col{
+    padding: 15px;
+    float: left;
+    width: 33%;
+    height: 200px;
+}
+
+.grid .content{
+    background: red;
+    background: #abc123;
+    background: #123abc;
+    background: rgb(221, 98, 98);
+    background: #BBD686;
+    background: #f0333396;
+    background: rgba(0, 0, 0, 0.85);
+    background: hsl(0, 100%, 50%);
+    background: hsla(0, 30%, 70%, 100%);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+
