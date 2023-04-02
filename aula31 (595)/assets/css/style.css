@@ -21,7 +21,8 @@ html {
 }
 
 p {
-    font-size: 2rem; /*0.5= 50px * 0.5 = 25px*/
+    /*font-size: 2rem; 2rem= 10px * 2 = 20px*/
+    font-size: 2vmax; /*2% da viewport (altura se for a maior ou largura se for a maior, o mesmo vale para o vmin)*/
 }
 
 .color-one {
