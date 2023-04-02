@@ -1,9 +1,12 @@
-html {
-    font-size: 62.5%;
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .pai {
-    width: 30rem;
+    width: 100vw;
+    height: 100vh;
     background: yellow;
 }
 
@@ -11,3 +14,10 @@ p {
     font-size: 2rem; /*0.5= 50px * 0.5 = 25px*/
 }
 
+.color-one {
+    background: turquoise;
+}
+
+.color-two {
+    background: violet;
+}
