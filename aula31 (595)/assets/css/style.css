@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /*62.5%16px=10px*/
     scroll-behavior: smooth; 
 }
 
@@ -9,9 +9,15 @@ html {
 }
 
 .pai {
-    width: 100vw;
+    width: 50rem; /*=500px*/
     height: 100vh;
     background: yellow;
+}
+
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
 }
 
 p {
