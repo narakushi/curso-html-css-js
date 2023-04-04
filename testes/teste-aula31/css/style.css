@@ -8,28 +8,23 @@ html {
     scroll-behavior: smooth;
 }
 
-.div1,
-.div2,
-.div3 {
+.pattern{
     font-size: 2rem;
+    width: 50vw;
+    height: 100vh;
 }
+
 
 .div1 {
     background: darkmagenta;
-    width: 50vw;
-    height: 100vh;
 }
 
 .div2 {
     background: darkcyan;
-    width: 50vw;
-    height: 100vh;
 }
 
 .div3 {
     background:darkgoldenrod;
-    width: 50vw;
-    height: 100vh;
 }
 
 a {
