@@ -2,7 +2,9 @@
     margin: 0;
 }
 
-.pai {}
+.pai {
+    height: 300vh;
+}
 
 .filha1,
 .filha2 {
@@ -20,10 +22,6 @@
 
 .filha1 {
     position: absolute;
-    width: auto;
-    height: auto;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
+    top: 50px;
+    left: 50px;
 }
