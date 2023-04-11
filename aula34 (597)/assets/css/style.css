@@ -20,6 +20,10 @@
 
 .filha1 {
     position: absolute;
-    bottom: -100px;
-    right: 50px;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
 }
