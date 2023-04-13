@@ -3,7 +3,7 @@
 }
 
 .pai {
-    height: 300vh;
+    height: 300vh; /*estabelece que a pagina vai ter 3x a altura da viewport*/
 }
 
 .filha1,
@@ -22,6 +22,6 @@
 
 .filha1 {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    width: 100vw;
+    height: 100vh;
 }
