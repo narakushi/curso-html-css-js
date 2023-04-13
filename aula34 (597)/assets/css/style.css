@@ -18,6 +18,10 @@
 
 .filha2 {
     background: greenyellow;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 1;
 }
 
 .filha1 {
@@ -31,7 +35,7 @@
     left: 100px;
 }
 
-.outra{
+.outra {
     background: #fff;
     font-size: 50px;
     position: absolute;
