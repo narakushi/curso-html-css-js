@@ -16,8 +16,9 @@
 }
 
 .filha2 {
+    position: absolute;
     background: greenyellow;
-    float:left;
+    z-index: 1;
 }
 
 .filha1 {
@@ -26,4 +27,5 @@
     margin: -150px;
     left: 50%;
     margin-left: -150px;
+    z-index: 2;
 }
