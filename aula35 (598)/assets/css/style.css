@@ -15,7 +15,7 @@
 }
 
 .grid .col { /*Ajeita os elementos filhos dentro do pai (grid)*/
-    width: 33.33%;
+
     height: 300px;
     float: left;
     padding: 15px;
@@ -27,14 +27,27 @@
     background: red;
 }
 
-@media (max-width: 320px){ /*o mesmo que @media all (max-width: 320px)*/
+@media all and (max-width: 568px){ /*o mesmo que @media all and (max-width: 320px)
+    all = todos os dispositivos*/
     .grid .col{
         width: 100%;
     }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 568px) and (max-width: 768px) { /*Para telas de no minimo 568 e no maximo 768*/
     .grid .col{
         width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) { /*para telas de no minimo 769 e no maximo 1200*/
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 1200px){ /*ficam 4 colunas para telas de 1200px para cima*/
+    .grid .col{
+        width: 25%;
     }
 }
