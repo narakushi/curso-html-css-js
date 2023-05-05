@@ -63,6 +63,11 @@ html{
     width: 100%;
 }
 
+.conteudo:hover{
+    background:rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
 p {
     clear: both;
     font-size: 1.6rem;
