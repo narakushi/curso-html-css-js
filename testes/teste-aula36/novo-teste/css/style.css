@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*ao adicionar o box-sizing o padding é incluído no edge content
+    para todos os elementos da página forçando a eles, a se somar para dar o tamanho pré-estabelecido*/
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background: black;
+    font-size: 1.6rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a{
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover{
+    background: #333;
+}
+
+.pai {
+    padding: 15px;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1200px;
+    padding-top: 58px;
+}
+
+.pai::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.pai .filha {
+    padding: 15px;
+    width: 33.33%;
+    height: 300px;
+    float: left;
+}
+
+.pai .conteudo {
+    background: #f00;
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo:hover {
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
