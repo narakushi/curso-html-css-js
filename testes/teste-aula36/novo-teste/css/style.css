@@ -25,7 +25,7 @@ body{
     list-style: none;
     display: block;
     max-width: 1200px;
-    padding: 0 30px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -50,7 +50,6 @@ body{
     margin: 0 auto;
     height: 100vh;
     max-width: 1200px;
-    padding-top: 58px;
 }
 
 .pai::after {
@@ -75,4 +74,29 @@ body{
 .conteudo:hover {
     background: rgba(0, 0, 0, 0.8);
     cursor: pointer;
+}
+
+@media all and (max-width: 568px){ /*o mesmo que @media all and (max-width: 320px)
+    all = todos os dispositivos*/
+    .grid .col{
+        width: 100%;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 768px) { /*Para telas de no minimo 568 e no maximo 768*/
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) { /*para telas de no minimo 769 e no maximo 1200*/
+    .grid .col{
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 1200px){ /*ficam 4 colunas para telas de 1200px para cima*/
+    .grid .col{
+        width: 25%;
+    }
 }
