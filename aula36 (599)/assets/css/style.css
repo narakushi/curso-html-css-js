@@ -4,8 +4,30 @@
     box-sizing: border-box;
 }
 
+.menu nav ul{
+    display: flex;
+    position: fixed;
+    background-color: #ad1c1c;
+    width: 100vw;
+}
+
+ul li{
+    padding: 15px 20px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
 .grid { /*faz um enchimento para dentro dos elementos filhos, ao redor*/
-    padding: 15px;;
+    padding: 15px;
+    position: relative;
+    z-index: -1;
+    padding-top: 40px;
+    height: 100vh;
 }
 
 .grid::after { /*adiciona um elemento vazio para cada filho e limpa para que elementos-tio n entrem no lugar*/
@@ -26,6 +48,15 @@
     height: 100%;
     background: red;
 }
+
+.sobrenos section{
+    height: 100vh;
+    background-color: #0ad6ff;
+    padding-top: 50px;
+}
+
+
+
 
 @media all and (max-width: 568px){ /*o mesmo que @media all and (max-width: 320px)
     all = todos os dispositivos*/
