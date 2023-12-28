@@ -69,6 +69,25 @@ li a{
   
 }
 
+.produto{
+    padding-top: 50px;
+    height: 100vh;
+    margin: 10px
+}
+
+.grupo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pdt{
+    height: 250px;
+    width: 250px;
+    background-color: #341919;
+    margin: 5px;
+   
+}
+
 
 
 @media all and (max-width: 568px){ /*o mesmo que @media all and (max-width: 320px)
