@@ -34,13 +34,13 @@
     }
 }
 
-@media (min-width: 568px) and (max-width: 768px) { /*Para telas de no minimo 568 e no maximo 768*/
+@media (min-width: 569px) and (max-width: 768px) { /*Para telas de no minimo 569 e no maximo 768*/
     .grid .col{
         width: 50%;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) { /*para telas de no minimo 769 e no maximo 1200*/
+@media all and (min-width: 769px) and (max-width: 1200px) { /*para telas de no minimo 769 e no maximo 1200*/
     .grid .col{
         width: 50%;
     }
