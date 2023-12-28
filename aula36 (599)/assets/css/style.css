@@ -55,6 +55,19 @@ li a{
     padding-top: 50px;
 }
 
+.contato{
+    background-color: aqua;
+    padding: 50px 20px 20px 20px;
+    height: 100vh;
+}
+
+.contato div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+  
+}
 
 
 
