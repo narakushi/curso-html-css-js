@@ -20,14 +20,19 @@ li a{
     text-decoration: none;
     color: whitesmoke;
     font-size: 18px;
+    padding: 15px 20px;
+    transition: all 400ms ease-in;
+}
+
+li a:hover{
+    background-color: #341919;
 }
 
 .grid { /*faz um enchimento para dentro dos elementos filhos, ao redor*/
     padding: 15px;
-    position: relative;
-    z-index: -1;
-    padding-top: 40px;
+    padding-top: 66px;
     height: 100vh;
+    margin: 0 auto;
 }
 
 .grid::after { /*adiciona um elemento vazio para cada filho e limpa para que elementos-tio n entrem no lugar*/
@@ -49,46 +54,18 @@ li a{
     background: red;
 }
 
-.sobrenos section{
+.sobrenos {
+    width: 100%;
+    padding: 30px;
     height: 100vh;
     background-color: #0ad6ff;
     padding-top: 50px;
+    margin-top: 25px;
 }
 
-.contato{
-    background-color: aqua;
-    padding: 50px 20px 20px 20px;
-    height: 100vh;
+.content{
+    margin: 0 auto;
 }
-
-.contato div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
-  
-}
-
-.produto{
-    padding-top: 50px;
-    height: 100vh;
-    margin: 10px
-}
-
-.grupo{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.pdt{
-    height: 250px;
-    width: 250px;
-    background-color: #341919;
-    margin: 5px;
-   
-}
-
-
 
 @media all and (max-width: 568px){ /*o mesmo que @media all and (max-width: 320px)
     all = todos os dispositivos*/
@@ -99,7 +76,7 @@ li a{
 
 @media (min-width: 569px) and (max-width: 768px) { /*Para telas de no minimo 569 e no maximo 768*/
     .grid .col{
-        width: 50%;
+        width: 33.33%;
     }
 }
 
