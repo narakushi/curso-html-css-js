@@ -1,93 +1,34 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.menu nav ul{
-    display: flex;
-    position: fixed;
-    background-color: #ad1c1c;
-    width: 100vw;
-}
-
-ul li{
-    padding: 15px 20px;
-    list-style: none;
-}
-
-li a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 18px;
-    padding: 15px 20px;
-    transition: all 400ms ease-in;
-}
-
-li a:hover{
-    background-color: #341919;
-}
-
-.grid { /*faz um enchimento para dentro dos elementos filhos, ao redor*/
+.grid{
+    
     padding: 15px;
-    padding-top: 66px;
-    height: 100vh;
-    margin: 0 auto;
 }
 
-.grid::after { /*adiciona um elemento vazio para cada filho e limpa para que elementos-tio n entrem no lugar*/
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.grid .col { /*Ajeita os elementos filhos dentro do pai (grid)*/
-
+.grid .col{
+    width: 33.33%;
     height: 300px;
     float: left;
     padding: 15px;
 }
 
-.grid .conteudo { /*filhos de col, o padding do grid faz enchimento para dentro de seu conteudo entre os netos (div com class="conteudo")*/
+.grid .col-content{
     width: 100%;
     height: 100%;
-    background: red;
+    background-color: red;
 }
 
-.sobrenos {
-    width: 100%;
-    padding: 30px;
-    height: 100vh;
-    background-color: #0ad6ff;
-    padding-top: 50px;
-    margin-top: 25px;
+.grid::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
-.content{
-    margin: 0 auto;
+p{
+    clear: both;
 }
 
-@media all and (max-width: 568px){ /*o mesmo que @media all and (max-width: 320px)
-    all = todos os dispositivos*/
-    .grid .col{
-        width: 100%;
-    }
-}
-
-@media (min-width: 569px) and (max-width: 768px) { /*Para telas de no minimo 569 e no maximo 768*/
-    .grid .col{
-        width: 33.33%;
-    }
-}
-
-@media all and (min-width: 769px) and (max-width: 1200px) { /*para telas de no minimo 769 e no maximo 1200*/
-    .grid .col{
-        width: 50%;
-    }
-}
-
-@media all and (min-width: 1200px){ /*ficam 4 colunas para telas de 1200px para cima*/
-    .grid .col{
-        width: 25%;
-    }
-}
