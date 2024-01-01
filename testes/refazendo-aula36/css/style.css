@@ -2,11 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menu{
+    background-color: #000000db;
+    width: 100%;
+    position: fixed;
+    display: block;
+}
+
+.menu ul{
+    margin: 0 auto; 
+    max-width: 1200px; 
+    padding: 0 15px;
+    list-style: none;
+}
+
+.menu li{
+    float: left;
+
+}
+
+.menu ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .grid{
     padding: 15px;
-    width: 1200px;
+    padding-top: 63px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
 }
@@ -27,18 +55,19 @@
 .grid::after{
     content: '';
     clear: both;
-    float: left;
+    display: block;
 }
 
 .sec2{
+    padding: 63px;
     clear: both;
     height: 100vh;
     background-color: rgb(0, 28, 53);
 }
 
 .content{
-    padding: 30px;
-    width: 1200px;
+    padding: 0 30px;
+    max-width: 1200px;
     margin: 0 auto;
-  
 }
+
