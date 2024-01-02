@@ -13,12 +13,13 @@
 }
 
 .flex-item{
-    flex-grow: 1;
-    flex-basis: 320px;
-    flex-shrink: 1;
+    flex: 1 1 320px;
     height: 200px;
     color: aliceblue;
     background: red;
 }
 
-
+.flex-item:nth-child(2){
+    flex: 10 1 320px; /*a medida que os espaços em branco aumentam o elemento recebe mais espaço*/
+    background-color: purple;
+}
