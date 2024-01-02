@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background: yellow;
+    height: 800px;
+}
+
+.flex-item{
+    color: aliceblue;
+    width: 100%;
+    background: red;
+}
