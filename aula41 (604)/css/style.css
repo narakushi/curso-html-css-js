@@ -13,9 +13,10 @@
 }
 
 .flex-item{
-    width: 32%;
+    flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 1;
     height: 200px;
-    margin-bottom: 2%;
     color: aliceblue;
     background: red;
 }
