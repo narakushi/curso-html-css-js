@@ -1,0 +1,51 @@
+aula flexbox part 2 - aula 602 (39)
+
+flex-wrap - quebra a linha jogando os elementos para outra linha
+align-content - pega o conteúdo do elemento e alinha, pode ter os valores que constam em justify-content e align-items
+
+
+aula flexbox part 3 - aula 604 (40) - com o display: flex, o elemento pai se comporta como um block, em relação a outros elementos
+
+inline-flex - é uma mistura do inline com flex, neste caso o elemento não ocupa toda a largura da tela.
+
+flex-wrap - quebra de linha
+
+flex-flow - forma prática de unir flex-direction a flex wrap, passando direcionamento junto de quebra de linha
+
+flex-grow - usa o espaço disponivel na tela para o tamanho do elemento divido igualmente entre os elementos. Divide os espaços que sobram entre os elementos
+
+flex-basis - funciona semelhantemente a um min-width, estabelecendo um tamanho para o elemento. (passamos valores numericos que simbolizam proporção)
+
+flex-shrink - permite que o elemento diminua conforme o tamanho da tela (passamos valores numericos que simbolizam proporção)
+
+atalho para usar essas propriedades (recomendável)
+flex: grow shrink basis; (ex: flex: 1 0 320px)
+
+se quisermos distribuir espaços igualmente e depois, desejarmos que um elemento receba um pouco a mais de espaços, podemos:
+
+
+.flex-item{
+    flex: 1 1 320px; //distribuindo espaços igualmente com o flex-grow passando proporção de 1 para cada
+    height: 200px;
+    color: aliceblue;
+    background: red;
+}
+
+.flex-item:nth-child(2){
+    flex: 2 1 320px; // sobrescrevemos para o filho 2, que queremos uma proporção de 2x para ele, então ele recebe um espaço a mais
+    background-color: purple;
+}
+
+align-self - alinha o elemento de forma indivídual, no seu eixo principal
+
+order - permite escolherindivídualmente qual a ordem desejada para um determinado elemento
+
+recurso da aula: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.alura.com.br/artigos/css-guia-do-flexbox
+
+
+
+
+
+ 
+
