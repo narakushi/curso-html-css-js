@@ -5,21 +5,19 @@
 }
 
 .flex-container{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
     background: yellow;
-    height: 500px;
-    width: 200px;
 }
 
 .flex-item{
+    width: 32%;
+    height: 200px;
+    margin-bottom: 2%;
     color: aliceblue;
     background: red;
-    margin: 10px;
 }
 
-.flex-item:nth-child(3){
-    font-size: 40px;
-}
+
