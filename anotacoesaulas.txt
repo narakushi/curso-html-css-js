@@ -1,4 +1,4 @@
-aula flexbox part 2 - aula 602 (39)
+aula flexbox part 2 - aula 603 (39)
 
 flex-wrap - quebra a linha jogando os elementos para outra linha
 align-content - pega o conteúdo do elemento e alinha, pode ter os valores que constam em justify-content e align-items
