@@ -74,9 +74,32 @@ um tamanho que caiba na tela entre 320px e 1 fragmento (restantes do tamanho da 
 
 - grid-template-rows: repeat(2, 1fr 2fr); a  grid-template-rows: repeat(2, 1fr 2fr);
 
-Geralmente não precisamos mexer com rows, se for só uma simples tabela
+Geralmente não precisamos mexer com rows, se for só uma simples tabela.
+
+Para selecionar uma ou mais colunas, podemos usar o grid-column-start ou grid-column-end
+
+exemplo:
+
+.grid div:nth-child(5){
+    background: darkblue ;
+    grid-column-start: 2; //seleciona a coluna 2
+    grid-column-end: 4; //seleciona a coluna 4 (a grid só tem 3 colunas visuais, mas considere os espaços entre cada celula)
+}
+
+se quisermos selecionar uma linha em específico, usamos o grid-row-start: no nth-child o que e passado é o numero a celula (div filha) 
+ 
+.grid div:nth-child(5), .grid div:nth-child(6){
+    background: darkblue ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;  
+}
 
 
+
+
+
+ 
 
 
 
