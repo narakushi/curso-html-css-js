@@ -72,7 +72,11 @@ um tamanho que caiba na tela entre 320px e 1 fragmento (restantes do tamanho da 
 -  grid-template-rows: 2fr 1fr 3fr; para configurar as linhas da grid, em sequencia, configurou a linha 01
 02 e 03.
 
-- grid-template-rows: repeat(2, 1fr 2fr); 
+- grid-template-rows: repeat(2, 1fr 2fr); a  grid-template-rows: repeat(2, 1fr 2fr);
+
+Geralmente não precisamos mexer com rows, se for só uma simples tabela
+
+
 
 
 
