@@ -25,7 +25,8 @@ body{
 
 .grid div:nth-child(5){
     background: darkblue;
-    grid-row: span 8;
+    grid-row: span 1;
+    grid-column: span 2;
 }
 
 
