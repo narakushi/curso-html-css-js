@@ -12,13 +12,12 @@ body{
 .grid{
     max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
     margin: 0 auto;
 }
 
 .grid div{
-    display: grid;
     background: fuchsia;
     min-height: 100px;
 }
@@ -33,4 +32,10 @@ body{
 .grid div:nth-child(5){ /*a celula 5 fica por cima da celula 6*/
     background-color: yellow;
     z-index: 1;
+}
+
+@media (max-width: 768px){
+    .grid div:nth-child(5){
+        grid-column: span 1;
+    }
 }
