@@ -103,6 +103,8 @@ além de poder adicionar linhas para toda a linha da grid e possível adicionar 
     grid-row: span 2;
 }
 
+*span trabalha com apenas valores positivos*
+
 
 para tornar a grid responsiva podemos fazer: 
 
@@ -153,9 +155,56 @@ Para dar espaçamento só em colunas:
 
     column-gap: 30px;
 
+E para usar no atalho:
+
+gap: 30px <- aqui será para linhas 50px <- colunas
+
+Como era antes da grid?
+
+usava-se margin, por exemplo:
+    margin-right: 30px; - espaço entre colunas
+    margin-bottom: 30px; - espaço entre linhas
+
+Mas tinha um problema: sobrava espaço no layout
+
+Para corrigir isso um dos consertos era criar uma div container e armazenar os elementos nela configurada com o max-width e outras
+propriedades que envolvesse posicionamento
 
 
+A função calc() também era uma saída permitindo somar medidas diferentes para consertar a disposição dos elementos na página
+.grid{
+    width: calc(100% + 30px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
 
+no exemplo acima, a tela estava com 30px residuais, ao usar o calc(), somou-se a largura da tela, os 30px 
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+no container que possui a grid como filha, para sumir com a barra de rolagem que aparece após realizar o uso da função calc
+usamos overflow
+
+Em alguns casos, usar configurações antigas como margin no lugar de gap, position e float no lugar de flexbox ou grid, é preciso, pois há navegadores que não
+as suportam.
+
+Então tecnlogias mais antigas, possuem maior compatibilidade com a maioria dos navegadores.
+
+para lidar com os 30px residuais outra forma é além de usar o container, fazer uso de uma margin negativa na grid:
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin-right: -30px;
+}
+
+no mais, o uso do css vai da necessidade do site e para quais navegadores será disponibilizado.
 
 
 

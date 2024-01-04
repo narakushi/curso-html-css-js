@@ -16,9 +16,9 @@ body{
 }
 
 .grid{
-    width: calc(100% + 30px);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin-right: -30px;
 }
 
 .grid div{
