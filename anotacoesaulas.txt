@@ -95,9 +95,22 @@ se quisermos selecionar uma linha em específico, usamos o grid-row-start: no nt
     grid-row-start: 3;  
 }
 
+*linha de grid não possui tamanho, só quem tem tamanho é o conteúdo*
+
+além de poder adicionar linhas para toda a linha da grid e possível adicionar linhas para uma celula isolada da grid:
+.grid div:nth-child(5){
+    background: darkblue;
+    grid-row: span 2;
+}
 
 
+para tornar a grid responsiva podemos fazer: 
 
+@media (max-width: 768px){
+    .grid div:nth-child(5){
+        grid-column: span 1;
+    }
+}
 
  
 
