@@ -206,6 +206,14 @@ para lidar com os 30px residuais outra forma é além de usar o container, fazer
 
 no mais, o uso do css vai da necessidade do site e para quais navegadores será disponibilizado.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+aula 46 (609) - grid template areas
+
+outra forma de organizar a grid, com grid template areas. Ela possibilita nomear as areas da grid e alocá-las aonde preferirmos na página.
+
+
+ 
+
 
 
 
