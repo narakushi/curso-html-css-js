@@ -9,18 +9,22 @@ body{
     font-size: 30px;
 }
 
-.grid{
+.container{
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid{
+    width: 1230px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    margin: 0 auto;
-    row-gap: 30px;
-    column-gap: 30px;
 }
 
 .grid div{
     background: fuchsia;
     min-height: 100px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .grid div:nth-child(5){
