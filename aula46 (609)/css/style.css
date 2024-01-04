@@ -9,29 +9,57 @@ body{
     font-size: 30px;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .grid{
     display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: auto auto auto; /*o auto ao final é para a coluna se auto-ajustar na tela*/
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'header header' /*ao repetir o nome desta forma, estamos pontuando que queremos que o elemento se repita para ambas as colunas definidas*/
+    'nav main'
+    'footer footer';
 }
 
-.grid div{
-    background: fuchsia;
-    min-height: 100px;
+/*nomeando elementos*/
+
+.grid div:nth-child(1){
+    background: red;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.grid div:nth-child(5){
-    background: darkblue;
+
+.grid div:nth-child(2){
+    background: yellow;
+    grid-area: nav;
 }
 
-
-.grid div:nth-child(5){ /*a celula 5 fica por cima da celula 6*/
-    background-color: yellow;
-   /* grid-column: span 2;*/
-    /*grid-column-start: 1;
-    grid-column-end: 4;*/
-    /*grid-column: span 2;
-    grid-row: um / tres;*/
-    /*grid-area: um / um / quatro / quatro;*/
+.grid div:nth-child(3){
+    background: purple;
+    grid-area: main;
 }
 
+.grid div:nth-child(4){
+    background: turquoise;
+    grid-area: footer;
+}
+
+@media (max-width: 768px){
+    
+.grid{
+    display: grid;
+    grid-template-rows: auto auto auto; /*o auto ao final é para a coluna se auto-ajustar na tela*/
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'nav'
+    'footer';
+}
+}
