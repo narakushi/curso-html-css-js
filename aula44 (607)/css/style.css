@@ -29,6 +29,7 @@ body{
 
 .grid div:nth-child(5){ /*a celula 5 fica por cima da celula 6*/
     background-color: yellow;
+    grid-column: span 2;
     /*grid-column-start: 1;
     grid-column-end: 4;*/
     /*grid-column: span 2;
