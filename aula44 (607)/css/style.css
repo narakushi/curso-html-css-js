@@ -12,8 +12,7 @@ body{
 .grid{
     max-width: 1200px;
     display: grid;
-    grid-template-columns: [um] 1fr [dois] 1fr [três] 1fr [quatro];
-    grid-template-rows: [um] 1fr [dois] 1fr [três] 1fr [quatro];
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
     margin: 0 auto;
 }
@@ -34,6 +33,6 @@ body{
     grid-column-end: 4;*/
     /*grid-column: span 2;
     grid-row: um / tres;*/
-    grid-area: um / um / quatro / quatro;
+    /*grid-area: um / um / quatro / quatro;*/
 }
 
