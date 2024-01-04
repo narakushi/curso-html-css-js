@@ -32,7 +32,8 @@ body{
     background-color: yellow;
     /*grid-column-start: 1;
     grid-column-end: 4;*/
-    grid-column: span 2;
-    grid-row: um / tres;
+    /*grid-column: span 2;
+    grid-row: um / tres;*/
+    grid-area: um / um / quatro / quatro;
 }
 
