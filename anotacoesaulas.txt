@@ -112,7 +112,51 @@ para tornar a grid responsiva podemos fazer:
     }
 }
 
+------------------------------------------------------------------------------------------------------------------------------
+aula 607 - css grid parte 2
+
+na grid, existem as celulas (conteudos filhos do elemento pai) e as marcações da grid, em uma grid de 3 celulas
+teremos 4 colunas
+
+se quisermos tornar essas colunas variáveis podemos nomeá-las assim:
+
+grid-template-columns: [um] 1fr [dois] 1fr [três] 1fr [quatro];
+
+podemos usar um atalho para selecionar essas colunas:
+
+Forma normalmente usada
+ /*grid-column-start: 1;
+    grid-column-end: 4;*/
+
+Forma com o atalho
+    grid-column: um / quatro;
+
  
+Além disso, é possível fazer um outro atalho com grid-area:
+
+grid: linha que inicia / coluna que inicia / linha que termina / coluna que termina;
+
+ex: 
+
+grid-area: um / um / quatro / quatro;
+
+--------------------------------------------------------------------------------------------------------------------------------
+aula 608 (45) - espaçamentos entre linhas e colunas - GAP
+
+Usado para dar espaçamento na grid entre colunas e linhas
+
+Para dar espaçamento só em linhas:
+
+    row-gap: 30px;
+
+Para dar espaçamento só em colunas:
+
+    column-gap: 30px;
+
+
+
+
+
 
 
 
