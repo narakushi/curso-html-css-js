@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px,1fr));
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.grid .col{
+    background: red;
+    min-height: 100px;
+}
+
+.grid .col:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid .col:nth-child(even){
+    background: darkred;
+}
